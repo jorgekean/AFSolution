@@ -34,13 +34,32 @@ namespace AFSolution.Controllers
         // sample get Data
         public async Task<IActionResult> GetData()
         {
-            // In a real app, you'd get data from a service or database.
+            // In a real app, you'd get data from a service or database. Provide 25 samples
             var fileData = new List<FileViewModel>
         {
             new FileViewModel { Id = 1, FileName = "File 3843843 Sample", Status = "Active", Date = "2025-07-19" },
             new FileViewModel { Id = 2, FileName = "File Sample 2222", Status = "Pending", Date = "2025-07-18" },
             new FileViewModel { Id = 3, FileName = "Archived Report Q2", Status = "Inactive", Date = "2025-06-30" },
-            new FileViewModel { Id = 4, FileName = "Final Draft Project X", Status = "Active", Date = "2025-07-20" }
+            new FileViewModel { Id = 4, FileName = "Final Draft Project X", Status = "Active", Date = "2025-07-20" },
+            new FileViewModel { Id = 5, FileName = "Meeting Notes 2025", Status = "Pending", Date = "2025-07-21" },
+            new FileViewModel { Id = 6, FileName = "Budget Report 2025", Status = "Active", Date = "2025-07-22" },
+            new FileViewModel { Id = 7, FileName = "Client Feedback", Status = "Pending", Date = "2025-07-23" },
+            new FileViewModel { Id = 8, FileName = "Project Plan", Status = "Active", Date = "2025-07-24" },
+            new FileViewModel { Id = 9, FileName = "Design Mockups", Status = "Inactive", Date = "2025-07-25" },
+            new FileViewModel { Id = 10, FileName = "Research Findings", Status = "Active", Date = "2025-07-26" },
+            new FileViewModel { Id = 11, FileName = "User Stories", Status = "Pending", Date = "2025-07-27" },
+            new FileViewModel { Id = 12, FileName = "Sprint Retrospective", Status = "Active", Date = "2025-07-28" },
+            new FileViewModel { Id = 13, FileName = "Risk Assessment", Status = "Inactive", Date = "2025-07-29" },
+            new FileViewModel { Id = 14, FileName = "Compliance Report", Status = "Active", Date = "2025-07-30" },
+            new FileViewModel { Id = 15, FileName = "Training Materials", Status = "Pending", Date = "2025-07-31" },
+            new FileViewModel { Id = 16, FileName = "Sales Data Q1", Status = "Active", Date = "2025-08-01" },
+            new FileViewModel { Id = 17, FileName = "Marketing Strategy", Status = "Pending", Date = "2025-08-02" },
+            new FileViewModel { Id = 18, FileName = "Product Roadmap", Status = "Active", Date = "2025-08-03" },
+            new FileViewModel { Id = 19, FileName = "Customer Support Logs", Status = "Inactive", Date = "2025-08-04" },
+            new FileViewModel { Id = 20, FileName = "Vendor Contracts", Status = "Active", Date = "2025-08-05" },
+            new FileViewModel { Id = 21, FileName = "IT Security Audit", Status = "Pending", Date = "2025-08-06" },
+            new FileViewModel { Id = 22, FileName = "System Performance Report", Status = "Active", Date = "2025-08-07" },
+            new FileViewModel { Id = 23, FileName = "Data Backup Logs", Status = "Inactive", Date = "2025-08-08" },
         };
 
             // Simulate a network delay to see the loading state
